@@ -1,0 +1,56 @@
+{
+  "model": "ECMWF",
+  "source": "https://www.tropicaltidbits.com/analysis/models/ecmwf/",
+  "latest_run": "2026091806",
+  "run_time_utc": "2026-09-18 06:00 UTC",
+  "run_time_taiwan": "2026-09-18 14:00 CST",
+  "generated_at": "2026-09-18T15:45:45.618727+00:00",
+  "forecast_hours": [
+    24,
+    48,
+    72,
+    96,
+    120
+  ],
+  "files": {
+    "mslp_uv850": {
+      "24": "mslp_uv850_f24.png",
+      "48": "mslp_uv850_f48.png",
+      "72": "mslp_uv850_f72.png",
+      "96": "mslp_uv850_f96.png",
+      "120": "mslp_uv850_f120.png"
+    },
+    "z500_vort": {
+      "24": "z500_vort_f24.png",
+      "48": "z500_vort_f48.png",
+      "72": "z500_vort_f72.png",
+      "96": "z500_vort_f96.png",
+      "120": "z500_vort_f120.png"
+    },
+    "mslp_pcpn": {
+      "24": "mslp_pcpn_f24.png",
+      "48": "mslp_pcpn_f48.png",
+      "72": "mslp_pcpn_f72.png",
+      "96": "mslp_pcpn_f96.png",
+      "120": "mslp_pcpn_f120.png"
+    }
+  },
+  "successful_files": [
+    "mslp_uv850_f24.png",
+    "mslp_uv850_f48.png",
+    "mslp_uv850_f72.png",
+    "mslp_uv850_f96.png",
+    "mslp_uv850_f120.png",
+    "z500_vort_f24.png",
+    "z500_vort_f48.png",
+    "z500_vort_f72.png",
+    "z500_vort_f96.png",
+    "z500_vort_f120.png",
+    "mslp_pcpn_f24.png",
+    "mslp_pcpn_f48.png",
+    "mslp_pcpn_f72.png",
+    "mslp_pcpn_f96.png",
+    "mslp_pcpn_f120.png"
+  ],
+  "failed_files": []
+}
