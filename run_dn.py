@@ -12,7 +12,7 @@ from pathlib import Path
 BASE_URL = "https://www.tropicaltidbits.com/analysis/models/ecmwf/"
 
 # 輸出資料夾
-OUTPUT_DIR = Path(r"C:\Users\sean\Downloads")
+OUTPUT_DIR = Path("./")
 
 # 是否保留舊 run
 KEEP_OLD_RUNS = True
