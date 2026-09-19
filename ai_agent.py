@@ -894,7 +894,7 @@ def main():
         # 呼叫 API，設定較長的 timeout 避免圖片多導致逾時
         response = model.generate_content(
             contents,
-            request_options={"timeout": 600}
+            request_options={"timeout": 240}
         )
 
         print("=" * 70)
