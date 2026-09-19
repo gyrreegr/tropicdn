@@ -1,10 +1,10 @@
 {
   "model": "ECMWF",
   "source": "https://www.tropicaltidbits.com/analysis/models/ecmwf/",
-  "latest_run": "2026091806",
-  "run_time_utc": "2026-09-18 06:00 UTC",
-  "run_time_taiwan": "2026-09-18 14:00 CST",
-  "generated_at": "2026-09-18T15:45:45.618727+00:00",
+  "latest_run": "2026091818",
+  "run_time_utc": "2026-09-18 18:00 UTC",
+  "run_time_taiwan": "2026-09-19 02:00 CST",
+  "generated_at": "2026-09-19T06:35:56.409404+00:00",
   "forecast_hours": [
     24,
     48,
@@ -33,6 +33,13 @@
       "72": "mslp_pcpn_f72.png",
       "96": "mslp_pcpn_f96.png",
       "120": "mslp_pcpn_f120.png"
+    },
+    "uv200": {
+      "24": "uv200_f24.png",
+      "48": "uv200_f48.png",
+      "72": "uv200_f72.png",
+      "96": "uv200_f96.png",
+      "120": "uv200_f120.png"
     }
   },
   "successful_files": [
@@ -50,7 +57,12 @@
     "mslp_pcpn_f48.png",
     "mslp_pcpn_f72.png",
     "mslp_pcpn_f96.png",
-    "mslp_pcpn_f120.png"
+    "mslp_pcpn_f120.png",
+    "uv200_f24.png",
+    "uv200_f48.png",
+    "uv200_f72.png",
+    "uv200_f96.png",
+    "uv200_f120.png"
   ],
   "failed_files": []
 }
