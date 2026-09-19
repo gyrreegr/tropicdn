@@ -31,18 +31,32 @@ jobs:
         run: python run_dn.py
 
       # 【第一階段 Push】：先將下載好的圖片與 index.json 推送到 GitHub
+            # 【第一階段 Push】：先將下載好的圖片與 index.json 推送到 GitHub
       - name: Commit & Push images
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -e
+
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
-          
-          # 將所有新增的檔案（圖片、json）加入
+
+          # 先取得遠端最新狀態
+          git fetch origin main
+
+          # 將目前產生的檔案加入
           git add .
-          git commit -m "Auto-update: ECMWF images [skip ci]" || echo "No changes to commit"
-          git pull --rebase origin main
+
+          # 沒有變更就跳過 commit
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+
+          git commit -m "Auto-update: ECMWF images [skip ci]"
+
+          # 將這次自動產生的內容優先於遠端衝突內容
+          git rebase -X theirs origin/main
+
+          # 推送
           git push origin main
 
       # 圖片上傳完成後，再開始執行 AI 分析
