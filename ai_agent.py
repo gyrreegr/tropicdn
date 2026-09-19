@@ -18,7 +18,7 @@ genai.configure(api_key=API_KEY)
 MODEL_NAME = 'gemini-3.5-flash'
 
 # 資料夾設定 (對應 run_dn.py 的輸出路徑)
-LATEST_DIR = Path("./")
+LATEST_DIR = Path("./latest")
 
 # ============================================================
 # 專業氣象提示詞 (NWP Analysis Prompt)
