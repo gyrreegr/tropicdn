@@ -5,6 +5,7 @@ import requests
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+
 # ============================================================
 # 設定
 # ============================================================
@@ -19,7 +20,7 @@ KEEP_OLD_RUNS = True
 
 # 預報時效
 FORECASTS = {
-    8: 24,
+    9: 24,
     17: 48,
     25: 72,
     33: 96,
@@ -30,7 +31,8 @@ FORECASTS = {
 PRODUCTS = {
     "mslp_uv850": "ecmwf_mslp_uv850_wpac",
     "z500_vort": "ecmwf_z500_vort_wpac",
-    "mslp_pcpn": "ecmwf_mslp_wind_wpac"
+    "mslp_pcpn": "ecmwf_mslp_wind_wpac",
+    "uv200": "ecmwf_uv200_wpac"
 }
 
 # HTTP
