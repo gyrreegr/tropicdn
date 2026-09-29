@@ -1,10 +1,10 @@
 {
   "model": "ECMWF",
   "source": "https://www.tropicaltidbits.com/analysis/models/ecmwf/",
-  "latest_run": "2026092812",
-  "run_time_utc": "2026-09-28 12:00 UTC",
-  "run_time_taiwan": "2026-09-28 20:00 CST",
-  "generated_at": "2026-09-28T22:00:38.516243+00:00",
+  "latest_run": "2026092818",
+  "run_time_utc": "2026-09-28 18:00 UTC",
+  "run_time_taiwan": "2026-09-29 02:00 CST",
+  "generated_at": "2026-09-29T03:00:42.328577+00:00",
   "forecast_hours": [
     24,
     48,
